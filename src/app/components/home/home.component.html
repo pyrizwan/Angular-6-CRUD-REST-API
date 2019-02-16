@@ -1,0 +1,20 @@
+<div class="jumbotron text-center">
+
+  <p><a *ngIf="!authService.loggedIn()" class="btn btn-success" [routerLink]="['/login']">Login</a></p>
+
+
+
+<div *ngIf="authService.loggedIn()">
+   
+  <div>
+    <p><a   class="btn btn-primary" [routerLink]="['/link1']">Link1 </a> </p>
+    </div>
+
+    <div>
+      <p><a   class="btn btn-success" [routerLink]="['/link2']">link2</a> </p>
+      </div>
+
+
+
+  </div>
+</div>
