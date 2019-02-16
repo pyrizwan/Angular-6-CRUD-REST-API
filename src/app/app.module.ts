@@ -14,7 +14,6 @@ import { AuthGuard } from './guards/auth.guard';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
-import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireModule } from 'angularfire2';
 
 import { environment } from '../environments/environment';
@@ -47,7 +46,7 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     FlashMessagesModule.forRoot(),
     //AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+   // AngularFirestoreModule
   ],
   providers: [
     
